@@ -1,0 +1,3 @@
+export const REPOS_LIST_REQUEST = 'repos/REPOS_LIST_REQUEST'
+export const REPOS_LIST_SUCCESS = 'repos/REPOS_LIST_SUCCESS'
+export const REPOS_LIST_FAILURE = 'repos/REPOS_LIST_FAILURE'

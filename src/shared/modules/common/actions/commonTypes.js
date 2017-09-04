@@ -1,0 +1,3 @@
+export const BOOK_LIST_REQUEST = 'common/BOOK_LIST_REQUEST'
+export const BOOK_LIST_SUCCESS = 'common/BOOK_LIST_SUCCESS'
+export const BOOK_LIST_FAILURE = 'common/BOOK_LIST_FAILURE'

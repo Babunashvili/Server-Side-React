@@ -3,7 +3,7 @@ import { render } from "react-dom";
 import { Provider } from "react-redux";
 import { BrowserRouter } from "react-router-dom";
 import configureStore from "../shared/configureStore";
-import App from "../shared/App";
+import App from "../shared/modules/common/scenes/App";
 
 const store = configureStore(window.__initialData__);
 
