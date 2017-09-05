@@ -24052,7 +24052,7 @@ __webpack_require__(39).inherits(FetchError, Error);
 var base64VLQ = __webpack_require__(165);
 var util = __webpack_require__(38);
 var ArraySet = __webpack_require__(166).ArraySet;
-var MappingList = __webpack_require__(402).MappingList;
+var MappingList = __webpack_require__(403).MappingList;
 
 /**
  * An instance of the SourceMapGenerator represents a source map which is
@@ -24501,7 +24501,7 @@ exports.SourceMapGenerator = SourceMapGenerator;
  * OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
  */
 
-var base64 = __webpack_require__(401);
+var base64 = __webpack_require__(402);
 
 // A single base 64 digit can contain 6 bits of data. For the base 64 variable
 // length quantities we use in the source map spec, the first bit is the sign,
@@ -24754,7 +24754,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__shared_routes__ = __webpack_require__(159);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__shared_configureStore__ = __webpack_require__(362);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__shared_modules_common_scenes_App__ = __webpack_require__(397);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_10_source_map_support_register__ = __webpack_require__(398);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_10_source_map_support_register__ = __webpack_require__(399);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_10_source_map_support_register___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_10_source_map_support_register__);
 var _jsxFileName = "C:\\Users\\d.babunashvili\\Desktop\\Server-Side-React\\src\\server\\index.js",
     _this = this;
@@ -48949,8 +48949,10 @@ module.exports = function serialize(obj, options) {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_immutable__ = __webpack_require__(52);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_immutable___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2_immutable__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__repos_actions_reposActions__ = __webpack_require__(360);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__Home_css__ = __webpack_require__(361);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__Home_css___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_4__Home_css__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__resources_assets_images_react_svg__ = __webpack_require__(409);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__resources_assets_images_react_svg___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_4__resources_assets_images_react_svg__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__Home_css__ = __webpack_require__(361);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__Home_css___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_5__Home_css__);
 var _jsxFileName = "C:\\Users\\d.babunashvili\\Desktop\\Server-Side-React\\src\\shared\\modules\\home\\scenes\\Home.js";
 
 var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
@@ -48960,6 +48962,7 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
 function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
 
 function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
 
 
 
@@ -48986,38 +48989,122 @@ var Home = function (_Component) {
     }, {
         key: "render",
         value: function render() {
-            var _this2 = this;
-
             return __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
                 "div",
-                {
-                    __source: {
+                { className: "home", __source: {
                         fileName: _jsxFileName,
-                        lineNumber: 23
+                        lineNumber: 24
                     },
                     __self: this
                 },
                 __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                    "ul",
-                    {
-                        __source: {
+                    "div",
+                    { className: "home__content", __source: {
                             fileName: _jsxFileName,
-                            lineNumber: 24
+                            lineNumber: 25
                         },
                         __self: this
                     },
-                    this.props.repos.map(function (repo) {
-                        return __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                            "li",
-                            { key: repo.get('id'), __source: {
-                                    fileName: _jsxFileName,
-                                    lineNumber: 25
-                                },
-                                __self: _this2
+                    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                        "a",
+                        { href: "#", className: "home__logo-link", __source: {
+                                fileName: _jsxFileName,
+                                lineNumber: 26
                             },
-                            repo.get('full_name')
-                        );
-                    })
+                            __self: this
+                        },
+                        __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("img", { className: "home__logo-img", src: __WEBPACK_IMPORTED_MODULE_4__resources_assets_images_react_svg___default.a, alt: "React Logo", __source: {
+                                fileName: _jsxFileName,
+                                lineNumber: 27
+                            },
+                            __self: this
+                        })
+                    ),
+                    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                        "h4",
+                        { className: "home__heading", __source: {
+                                fileName: _jsxFileName,
+                                lineNumber: 29
+                            },
+                            __self: this
+                        },
+                        "React-Redux Boilerplate"
+                    ),
+                    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                        "nav",
+                        { className: "home__nav", __source: {
+                                fileName: _jsxFileName,
+                                lineNumber: 30
+                            },
+                            __self: this
+                        },
+                        __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                            "ul",
+                            { className: "home__nav-list", __source: {
+                                    fileName: _jsxFileName,
+                                    lineNumber: 31
+                                },
+                                __self: this
+                            },
+                            __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                                "li",
+                                { className: "home__nav-list-item", __source: {
+                                        fileName: _jsxFileName,
+                                        lineNumber: 32
+                                    },
+                                    __self: this
+                                },
+                                __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                                    "a",
+                                    { href: "https://github.com/david-babunashvili/React-Redux-Boilerplate#readme", target: "_blank", rel: "noopener noreferrer", className: "home__nav-list-link", __source: {
+                                            fileName: _jsxFileName,
+                                            lineNumber: 33
+                                        },
+                                        __self: this
+                                    },
+                                    "DOCUMENTATION"
+                                )
+                            ),
+                            __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                                "li",
+                                { className: "home__nav-list-item", __source: {
+                                        fileName: _jsxFileName,
+                                        lineNumber: 35
+                                    },
+                                    __self: this
+                                },
+                                __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                                    "a",
+                                    { href: "https://github.com/david-babunashvili/React-Redux-Boilerplate", target: "_blank", rel: "noopener noreferrer", className: "home__nav-list-link", __source: {
+                                            fileName: _jsxFileName,
+                                            lineNumber: 36
+                                        },
+                                        __self: this
+                                    },
+                                    "GITHUB"
+                                )
+                            ),
+                            __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                                "li",
+                                { className: "home__nav-list-item", __source: {
+                                        fileName: _jsxFileName,
+                                        lineNumber: 38
+                                    },
+                                    __self: this
+                                },
+                                __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                                    "a",
+                                    { href: "https://github.com/david-babunashvili/React-Redux-Boilerplate/issues", target: "_blank", rel: "noopener noreferrer", className: "home__nav-list-link", __source: {
+                                            fileName: _jsxFileName,
+                                            lineNumber: 39
+                                        },
+                                        __self: this
+                                    },
+                                    "BUGS"
+                                )
+                            )
+                        )
+                    )
                 )
             );
         }
@@ -52655,7 +52742,7 @@ var reposReducer = function reposReducer() {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_react__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_react_router_dom__ = __webpack_require__(151);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__routes__ = __webpack_require__(159);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__App_css__ = __webpack_require__(408);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__App_css__ = __webpack_require__(398);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__App_css___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_3__App_css__);
 var _jsxFileName = "C:\\Users\\d.babunashvili\\Desktop\\Server-Side-React\\src\\shared\\modules\\common\\scenes\\App.js";
 
@@ -52715,16 +52802,22 @@ var App = function (_Component) {
 
 /***/ }),
 /* 398 */
-/***/ (function(module, exports, __webpack_require__) {
+/***/ (function(module, exports) {
 
-__webpack_require__(399).install();
 
 
 /***/ }),
 /* 399 */
 /***/ (function(module, exports, __webpack_require__) {
 
-var SourceMapConsumer = __webpack_require__(400).SourceMapConsumer;
+__webpack_require__(400).install();
+
+
+/***/ }),
+/* 400 */
+/***/ (function(module, exports, __webpack_require__) {
+
+var SourceMapConsumer = __webpack_require__(401).SourceMapConsumer;
 var path = __webpack_require__(12);
 
 var fs;
@@ -53197,7 +53290,7 @@ exports.install = function(options) {
   if (options.hookRequire && !isInBrowser()) {
     var Module;
     try {
-      Module = __webpack_require__(407);
+      Module = __webpack_require__(408);
     } catch (err) {
       // NOP: Loading in catch block to convert webpack error to warning.
     }
@@ -53246,7 +53339,7 @@ exports.install = function(options) {
 
 
 /***/ }),
-/* 400 */
+/* 401 */
 /***/ (function(module, exports, __webpack_require__) {
 
 /*
@@ -53255,12 +53348,12 @@ exports.install = function(options) {
  * http://opensource.org/licenses/BSD-3-Clause
  */
 exports.SourceMapGenerator = __webpack_require__(164).SourceMapGenerator;
-exports.SourceMapConsumer = __webpack_require__(403).SourceMapConsumer;
-exports.SourceNode = __webpack_require__(406).SourceNode;
+exports.SourceMapConsumer = __webpack_require__(404).SourceMapConsumer;
+exports.SourceNode = __webpack_require__(407).SourceNode;
 
 
 /***/ }),
-/* 401 */
+/* 402 */
 /***/ (function(module, exports) {
 
 /* -*- Mode: js; js-indent-level: 2; -*- */
@@ -53333,7 +53426,7 @@ exports.decode = function (charCode) {
 
 
 /***/ }),
-/* 402 */
+/* 403 */
 /***/ (function(module, exports, __webpack_require__) {
 
 /* -*- Mode: js; js-indent-level: 2; -*- */
@@ -53418,7 +53511,7 @@ exports.MappingList = MappingList;
 
 
 /***/ }),
-/* 403 */
+/* 404 */
 /***/ (function(module, exports, __webpack_require__) {
 
 /* -*- Mode: js; js-indent-level: 2; -*- */
@@ -53429,10 +53522,10 @@ exports.MappingList = MappingList;
  */
 
 var util = __webpack_require__(38);
-var binarySearch = __webpack_require__(404);
+var binarySearch = __webpack_require__(405);
 var ArraySet = __webpack_require__(166).ArraySet;
 var base64VLQ = __webpack_require__(165);
-var quickSort = __webpack_require__(405).quickSort;
+var quickSort = __webpack_require__(406).quickSort;
 
 function SourceMapConsumer(aSourceMap) {
   var sourceMap = aSourceMap;
@@ -54506,7 +54599,7 @@ exports.IndexedSourceMapConsumer = IndexedSourceMapConsumer;
 
 
 /***/ }),
-/* 404 */
+/* 405 */
 /***/ (function(module, exports) {
 
 /* -*- Mode: js; js-indent-level: 2; -*- */
@@ -54623,7 +54716,7 @@ exports.search = function search(aNeedle, aHaystack, aCompare, aBias) {
 
 
 /***/ }),
-/* 405 */
+/* 406 */
 /***/ (function(module, exports) {
 
 /* -*- Mode: js; js-indent-level: 2; -*- */
@@ -54743,7 +54836,7 @@ exports.quickSort = function (ary, comparator) {
 
 
 /***/ }),
-/* 406 */
+/* 407 */
 /***/ (function(module, exports, __webpack_require__) {
 
 /* -*- Mode: js; js-indent-level: 2; -*- */
@@ -55162,16 +55255,16 @@ exports.SourceNode = SourceNode;
 
 
 /***/ }),
-/* 407 */
+/* 408 */
 /***/ (function(module, exports) {
 
 module.exports = require("module");
 
 /***/ }),
-/* 408 */
+/* 409 */
 /***/ (function(module, exports) {
 
-throw new Error("Module build failed: Error: ENOENT: no such file or directory, open 'C:\\Users\\d.babunashvili\\Desktop\\Server-Side-React\\src\\shared\\modules\\common\\scenes\\App.css'");
+module.exports = "/assets/images/react.svg";
 
 /***/ })
 /******/ ]);

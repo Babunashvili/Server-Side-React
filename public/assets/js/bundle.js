@@ -34683,7 +34683,7 @@ var reposReducer = function reposReducer() {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_react__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_react_router_dom__ = __webpack_require__(110);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__routes__ = __webpack_require__(279);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__App_css__ = __webpack_require__(284);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__App_css__ = __webpack_require__(283);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__App_css___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_3__App_css__);
 var _jsxFileName = "C:\\Users\\d.babunashvili\\Desktop\\Server-Side-React\\src\\shared\\modules\\common\\scenes\\App.js";
 
@@ -34768,8 +34768,10 @@ var routes = [{
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_immutable__ = __webpack_require__(39);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_immutable___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2_immutable__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__repos_actions_reposActions__ = __webpack_require__(281);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__Home_css__ = __webpack_require__(282);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__Home_css___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_4__Home_css__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__resources_assets_images_react_svg__ = __webpack_require__(285);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__resources_assets_images_react_svg___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_4__resources_assets_images_react_svg__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__Home_css__ = __webpack_require__(282);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__Home_css___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_5__Home_css__);
 var _jsxFileName = "C:\\Users\\d.babunashvili\\Desktop\\Server-Side-React\\src\\shared\\modules\\home\\scenes\\Home.js";
 
 var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
@@ -34779,6 +34781,7 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
 function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
 
 function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
 
 
 
@@ -34805,38 +34808,122 @@ var Home = function (_Component) {
     }, {
         key: "render",
         value: function render() {
-            var _this2 = this;
-
             return __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
                 "div",
-                {
-                    __source: {
+                { className: "home", __source: {
                         fileName: _jsxFileName,
-                        lineNumber: 23
+                        lineNumber: 24
                     },
                     __self: this
                 },
                 __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                    "ul",
-                    {
-                        __source: {
+                    "div",
+                    { className: "home__content", __source: {
                             fileName: _jsxFileName,
-                            lineNumber: 24
+                            lineNumber: 25
                         },
                         __self: this
                     },
-                    this.props.repos.map(function (repo) {
-                        return __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                            "li",
-                            { key: repo.get('id'), __source: {
-                                    fileName: _jsxFileName,
-                                    lineNumber: 25
-                                },
-                                __self: _this2
+                    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                        "a",
+                        { href: "#", className: "home__logo-link", __source: {
+                                fileName: _jsxFileName,
+                                lineNumber: 26
                             },
-                            repo.get('full_name')
-                        );
-                    })
+                            __self: this
+                        },
+                        __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("img", { className: "home__logo-img", src: __WEBPACK_IMPORTED_MODULE_4__resources_assets_images_react_svg___default.a, alt: "React Logo", __source: {
+                                fileName: _jsxFileName,
+                                lineNumber: 27
+                            },
+                            __self: this
+                        })
+                    ),
+                    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                        "h4",
+                        { className: "home__heading", __source: {
+                                fileName: _jsxFileName,
+                                lineNumber: 29
+                            },
+                            __self: this
+                        },
+                        "React-Redux Boilerplate"
+                    ),
+                    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                        "nav",
+                        { className: "home__nav", __source: {
+                                fileName: _jsxFileName,
+                                lineNumber: 30
+                            },
+                            __self: this
+                        },
+                        __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                            "ul",
+                            { className: "home__nav-list", __source: {
+                                    fileName: _jsxFileName,
+                                    lineNumber: 31
+                                },
+                                __self: this
+                            },
+                            __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                                "li",
+                                { className: "home__nav-list-item", __source: {
+                                        fileName: _jsxFileName,
+                                        lineNumber: 32
+                                    },
+                                    __self: this
+                                },
+                                __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                                    "a",
+                                    { href: "https://github.com/david-babunashvili/React-Redux-Boilerplate#readme", target: "_blank", rel: "noopener noreferrer", className: "home__nav-list-link", __source: {
+                                            fileName: _jsxFileName,
+                                            lineNumber: 33
+                                        },
+                                        __self: this
+                                    },
+                                    "DOCUMENTATION"
+                                )
+                            ),
+                            __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                                "li",
+                                { className: "home__nav-list-item", __source: {
+                                        fileName: _jsxFileName,
+                                        lineNumber: 35
+                                    },
+                                    __self: this
+                                },
+                                __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                                    "a",
+                                    { href: "https://github.com/david-babunashvili/React-Redux-Boilerplate", target: "_blank", rel: "noopener noreferrer", className: "home__nav-list-link", __source: {
+                                            fileName: _jsxFileName,
+                                            lineNumber: 36
+                                        },
+                                        __self: this
+                                    },
+                                    "GITHUB"
+                                )
+                            ),
+                            __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                                "li",
+                                { className: "home__nav-list-item", __source: {
+                                        fileName: _jsxFileName,
+                                        lineNumber: 38
+                                    },
+                                    __self: this
+                                },
+                                __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                                    "a",
+                                    { href: "https://github.com/david-babunashvili/React-Redux-Boilerplate/issues", target: "_blank", rel: "noopener noreferrer", className: "home__nav-list-link", __source: {
+                                            fileName: _jsxFileName,
+                                            lineNumber: 39
+                                        },
+                                        __self: this
+                                    },
+                                    "BUGS"
+                                )
+                            )
+                        )
+                    )
                 )
             );
         }
@@ -34919,11 +35006,17 @@ var reposListFetch = function reposListFetch() {
 // removed by extract-text-webpack-plugin
 
 /***/ }),
-/* 283 */,
-/* 284 */
+/* 283 */
 /***/ (function(module, exports) {
 
-throw new Error("Module build failed: ModuleBuildError: Module build failed: Error: ENOENT: no such file or directory, open 'C:\\Users\\d.babunashvili\\Desktop\\Server-Side-React\\src\\shared\\modules\\common\\scenes\\App.css'\n    at runLoaders (C:\\Users\\d.babunashvili\\Desktop\\Server-Side-React\\node_modules\\webpack\\lib\\NormalModule.js:194:19)\n    at C:\\Users\\d.babunashvili\\Desktop\\Server-Side-React\\node_modules\\loader-runner\\lib\\LoaderRunner.js:364:11\n    at C:\\Users\\d.babunashvili\\Desktop\\Server-Side-React\\node_modules\\loader-runner\\lib\\LoaderRunner.js:200:19\n    at C:\\Users\\d.babunashvili\\Desktop\\Server-Side-React\\node_modules\\enhanced-resolve\\lib\\CachedInputFileSystem.js:70:14\n    at _combinedTickCallback (internal/process/next_tick.js:73:7)\n    at process._tickCallback (internal/process/next_tick.js:104:9)");
+// removed by extract-text-webpack-plugin
+
+/***/ }),
+/* 284 */,
+/* 285 */
+/***/ (function(module, exports) {
+
+module.exports = "/assets/images/react.svg";
 
 /***/ })
 /******/ ]);
