@@ -1,6 +1,7 @@
 const webpack = require("webpack");
 const ExtractTextPlugin = require("extract-text-webpack-plugin");
 const autoprefixer = require("autoprefixer");
+const path = require('path')
 
 const browserConfig = {
   entry: "./src/browser/index.js",
@@ -10,8 +11,7 @@ const browserConfig = {
   },
   devtool: "cheap-module-source-map",
   module: {
-    rules: [
-      {
+    rules: [{
         test: [/\.svg$/, /\.gif$/, /\.jpe?g$/, /\.png$/],
         loader: "file-loader",
         options: {
@@ -22,14 +22,17 @@ const browserConfig = {
       {
         test: /\.css$/,
         use: ExtractTextPlugin.extract({
-          use: [
-            {
+          use: [{
               loader: "css-loader",
-              options: { importLoaders: 1 }
+              options: {
+                importLoaders: 1
+              }
             },
             {
               loader: "postcss-loader",
-              options: { plugins: [autoprefixer()] }
+              options: {
+                plugins: [autoprefixer()]
+              }
             }
           ]
         })
@@ -38,7 +41,9 @@ const browserConfig = {
         test: /js$/,
         exclude: /(node_modules)/,
         loader: "babel-loader",
-        query: { presets: ["react-app"] }
+        query: {
+          presets: ["react-app"]
+        }
       }
     ]
   },
@@ -59,8 +64,7 @@ const serverConfig = {
   },
   devtool: "cheap-module-source-map",
   module: {
-    rules: [
-      {
+    rules: [{
         test: [/\.svg$/, /\.gif$/, /\.jpe?g$/, /\.png$/],
         loader: "file-loader",
         options: {
@@ -71,17 +75,17 @@ const serverConfig = {
       },
       {
         test: /\.css$/,
-        use: [
-          {
-            loader: "css-loader/locals"
-          }
-        ]
+        use: [{
+          loader: "css-loader/locals"
+        }]
       },
       {
         test: /js$/,
         exclude: /(node_modules)/,
         loader: "babel-loader",
-        query: { presets: ["react-app"] }
+        query: {
+          presets: ["react-app"]
+        }
       }
     ]
   }
