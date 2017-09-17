@@ -34933,7 +34933,7 @@ var Home = function (_Component) {
                                 },
                                 __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
                                     __WEBPACK_IMPORTED_MODULE_2_react_router_dom__["b" /* Link */],
-                                    { to: "repos", rel: "noopener noreferrer", className: "home__nav-list-link", __source: {
+                                    { to: "/repos", rel: "noopener noreferrer", className: "home__nav-list-link", __source: {
                                             fileName: _jsxFileName,
                                             lineNumber: 35
                                         },
@@ -35073,7 +35073,7 @@ var Repos = function (_Component) {
     _createClass(Repos, [{
         key: "componentDidMount",
         value: function componentDidMount() {
-            if (!this.props.repos) {
+            if (!this.props.repos.length) {
                 this.props.reposListFetch();
             }
         }

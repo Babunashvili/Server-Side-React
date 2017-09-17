@@ -17,7 +17,7 @@ class Repos extends Component {
     }
 
     componentDidMount() {
-        if (!this.props.repos) {
+        if (!this.props.repos.length) {
             this.props.reposListFetch()
         }
     }

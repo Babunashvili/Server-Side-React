@@ -32,7 +32,7 @@ class Home extends Component {
                                 <a href="https://github.com/david-babunashvili/Server-Side-React/issues" target="_blank" rel="noopener noreferrer" className="home__nav-list-link">BUGS</a>
                             </li>
                             <li className="home__nav-list-item">
-                                <Link to="repos" rel="noopener noreferrer" className="home__nav-list-link">EXAMPLE PAGE</Link>
+                                <Link to="/repos" rel="noopener noreferrer" className="home__nav-list-link">EXAMPLE PAGE</Link>
                             </li>
                         </ul>
                     </nav>
