@@ -24,7 +24,7 @@ export function reposListFailure(payload) {
 
 export const reposListFetch = () => (dispatch, getState) => {
     dispatch(reposListRequest());
-    return fetch("https://api.github.com/search/repositories?q=react&sort=watchers")
+    return fetch("https://api.github.com/search/repositories?q=react&sort=watchers&per_page=10")
         .then(response => response.json())
         .then(repos => dispatch(reposListSuccess(repos)))
         .catch(err => dispatch(reposListFailure(err)));

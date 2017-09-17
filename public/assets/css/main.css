@@ -40,7 +40,39 @@ q:before, q:after {
 table {
 	border-collapse: collapse;
 	border-spacing: 0;
-}.home {
+}.repos {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+
+  .repos__heading{
+      font-size: 20px;
+      margin-bottom: 15px;
+  }
+  .repos__list{
+      text-align: center;
+  }
+
+  .repos__list-item{
+      margin-top:5px;
+  }
+
+  .repos__back{
+      margin-top:15px;
+  }.home {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;

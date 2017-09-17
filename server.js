@@ -23391,7 +23391,7 @@ function verifyPlainObject(value, displayName, methodName) {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__HashRouter__ = __webpack_require__(335);
 /* unused harmony reexport HashRouter */
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__Link__ = __webpack_require__(155);
-/* unused harmony reexport Link */
+/* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return __WEBPACK_IMPORTED_MODULE_2__Link__["a"]; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__MemoryRouter__ = __webpack_require__(337);
 /* unused harmony reexport MemoryRouter */
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__NavLink__ = __webpack_require__(340);
@@ -23401,15 +23401,15 @@ function verifyPlainObject(value, displayName, methodName) {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__Redirect__ = __webpack_require__(345);
 /* unused harmony reexport Redirect */
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__Route__ = __webpack_require__(156);
-/* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return __WEBPACK_IMPORTED_MODULE_7__Route__["a"]; });
+/* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "b", function() { return __WEBPACK_IMPORTED_MODULE_7__Route__["a"]; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__Router__ = __webpack_require__(82);
 /* unused harmony reexport Router */
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__StaticRouter__ = __webpack_require__(351);
-/* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "b", function() { return __WEBPACK_IMPORTED_MODULE_9__StaticRouter__["a"]; });
+/* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "c", function() { return __WEBPACK_IMPORTED_MODULE_9__StaticRouter__["a"]; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__Switch__ = __webpack_require__(353);
 /* unused harmony reexport Switch */
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_11__matchPath__ = __webpack_require__(355);
-/* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "c", function() { return __WEBPACK_IMPORTED_MODULE_11__matchPath__["a"]; });
+/* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "d", function() { return __WEBPACK_IMPORTED_MODULE_11__matchPath__["a"]; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_12__withRouter__ = __webpack_require__(356);
 /* unused harmony reexport withRouter */
 
@@ -23964,12 +23964,18 @@ var isExtraneousPopstateEvent = function isExtraneousPopstateEvent(event) {
 
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__modules_home_scenes_Home__ = __webpack_require__(359);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__modules_repos_scenes_Repos__ = __webpack_require__(410);
+
 
 
 var routes = [{
   path: "/",
   exact: true,
   component: __WEBPACK_IMPORTED_MODULE_0__modules_home_scenes_Home__["a" /* default */]
+}, {
+  path: "/repos",
+  exact: true,
+  component: __WEBPACK_IMPORTED_MODULE_1__modules_repos_scenes_Repos__["a" /* default */]
 }];
 
 /* harmony default export */ __webpack_exports__["a"] = (routes);
@@ -24756,7 +24762,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__shared_modules_common_scenes_App__ = __webpack_require__(397);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_10_source_map_support_register__ = __webpack_require__(399);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_10_source_map_support_register___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_10_source_map_support_register__);
-var _jsxFileName = "C:\\Users\\d.babunashvili\\Desktop\\Server-Side-React\\src\\server\\index.js",
+var _jsxFileName = "/Users/mac/Desktop/Server-Side-React/src/server/index.js",
     _this = this;
 
 
@@ -24780,7 +24786,7 @@ app.get("*", function (req, res, next) {
   var store = Object(__WEBPACK_IMPORTED_MODULE_8__shared_configureStore__["a" /* default */])();
 
   var promises = __WEBPACK_IMPORTED_MODULE_7__shared_routes__["a" /* default */].reduce(function (acc, route) {
-    if (Object(__WEBPACK_IMPORTED_MODULE_5_react_router_dom__["c" /* matchPath */])(req.url, route) && route.component && route.component.initialAction) {
+    if (Object(__WEBPACK_IMPORTED_MODULE_5_react_router_dom__["d" /* matchPath */])(req.url, route) && route.component && route.component.initialAction) {
       acc.push(Promise.resolve(store.dispatch(route.component.initialAction())));
     }
     return acc;
@@ -24797,7 +24803,7 @@ app.get("*", function (req, res, next) {
         __self: _this
       },
       __WEBPACK_IMPORTED_MODULE_2_react___default.a.createElement(
-        __WEBPACK_IMPORTED_MODULE_5_react_router_dom__["b" /* StaticRouter */],
+        __WEBPACK_IMPORTED_MODULE_5_react_router_dom__["c" /* StaticRouter */],
         { location: req.url, context: context, __source: {
             fileName: _jsxFileName,
             lineNumber: 33
@@ -48946,14 +48952,15 @@ module.exports = function serialize(obj, options) {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react__ = __webpack_require__(5);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_react__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_react_redux__ = __webpack_require__(141);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_immutable__ = __webpack_require__(52);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_immutable___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2_immutable__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__repos_actions_reposActions__ = __webpack_require__(360);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__resources_assets_images_react_svg__ = __webpack_require__(409);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__resources_assets_images_react_svg___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_4__resources_assets_images_react_svg__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__Home_css__ = __webpack_require__(361);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__Home_css___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_5__Home_css__);
-var _jsxFileName = "C:\\Users\\d.babunashvili\\Desktop\\Server-Side-React\\src\\shared\\modules\\home\\scenes\\Home.js";
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_react_router_dom__ = __webpack_require__(151);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_immutable__ = __webpack_require__(52);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_immutable___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_3_immutable__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__repos_actions_reposActions__ = __webpack_require__(360);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__resources_assets_images_react_svg__ = __webpack_require__(409);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__resources_assets_images_react_svg___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_5__resources_assets_images_react_svg__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__Home_css__ = __webpack_require__(361);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__Home_css___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_6__Home_css__);
+var _jsxFileName = "/Users/mac/Desktop/Server-Side-React/src/shared/modules/home/scenes/Home.js";
 
 var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
 
@@ -48962,6 +48969,7 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
 function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
 
 function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
 
 
 
@@ -48980,20 +48988,13 @@ var Home = function (_Component) {
     }
 
     _createClass(Home, [{
-        key: "componentDidMount",
-        value: function componentDidMount() {
-            if (!this.props.common) {
-                this.props.reposListFetch();
-            }
-        }
-    }, {
         key: "render",
         value: function render() {
             return __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
                 "div",
                 { className: "home", __source: {
                         fileName: _jsxFileName,
-                        lineNumber: 24
+                        lineNumber: 17
                     },
                     __self: this
                 },
@@ -49001,7 +49002,7 @@ var Home = function (_Component) {
                     "div",
                     { className: "home__content", __source: {
                             fileName: _jsxFileName,
-                            lineNumber: 25
+                            lineNumber: 18
                         },
                         __self: this
                     },
@@ -49009,13 +49010,13 @@ var Home = function (_Component) {
                         "a",
                         { href: "#", className: "home__logo-link", __source: {
                                 fileName: _jsxFileName,
-                                lineNumber: 26
+                                lineNumber: 19
                             },
                             __self: this
                         },
-                        __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("img", { className: "home__logo-img", src: __WEBPACK_IMPORTED_MODULE_4__resources_assets_images_react_svg___default.a, alt: "React Logo", __source: {
+                        __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("img", { className: "home__logo-img", src: __WEBPACK_IMPORTED_MODULE_5__resources_assets_images_react_svg___default.a, alt: "React Logo", __source: {
                                 fileName: _jsxFileName,
-                                lineNumber: 27
+                                lineNumber: 20
                             },
                             __self: this
                         })
@@ -49024,17 +49025,17 @@ var Home = function (_Component) {
                         "h4",
                         { className: "home__heading", __source: {
                                 fileName: _jsxFileName,
-                                lineNumber: 29
+                                lineNumber: 22
                             },
                             __self: this
                         },
-                        "React-Redux Boilerplate"
+                        "React-Redux Server Side"
                     ),
                     __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
                         "nav",
                         { className: "home__nav", __source: {
                                 fileName: _jsxFileName,
-                                lineNumber: 30
+                                lineNumber: 23
                             },
                             __self: this
                         },
@@ -49042,7 +49043,7 @@ var Home = function (_Component) {
                             "ul",
                             { className: "home__nav-list", __source: {
                                     fileName: _jsxFileName,
-                                    lineNumber: 31
+                                    lineNumber: 24
                                 },
                                 __self: this
                             },
@@ -49050,15 +49051,15 @@ var Home = function (_Component) {
                                 "li",
                                 { className: "home__nav-list-item", __source: {
                                         fileName: _jsxFileName,
-                                        lineNumber: 32
+                                        lineNumber: 25
                                     },
                                     __self: this
                                 },
                                 __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
                                     "a",
-                                    { href: "https://github.com/david-babunashvili/React-Redux-Boilerplate#readme", target: "_blank", rel: "noopener noreferrer", className: "home__nav-list-link", __source: {
+                                    { href: "https://github.com/david-babunashvili/Server-Side-React#readme", target: "_blank", rel: "noopener noreferrer", className: "home__nav-list-link", __source: {
                                             fileName: _jsxFileName,
-                                            lineNumber: 33
+                                            lineNumber: 26
                                         },
                                         __self: this
                                     },
@@ -49069,15 +49070,15 @@ var Home = function (_Component) {
                                 "li",
                                 { className: "home__nav-list-item", __source: {
                                         fileName: _jsxFileName,
-                                        lineNumber: 35
+                                        lineNumber: 28
                                     },
                                     __self: this
                                 },
                                 __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
                                     "a",
-                                    { href: "https://github.com/david-babunashvili/React-Redux-Boilerplate", target: "_blank", rel: "noopener noreferrer", className: "home__nav-list-link", __source: {
+                                    { href: "https://github.com/david-babunashvili/Server-Side-React", target: "_blank", rel: "noopener noreferrer", className: "home__nav-list-link", __source: {
                                             fileName: _jsxFileName,
-                                            lineNumber: 36
+                                            lineNumber: 29
                                         },
                                         __self: this
                                     },
@@ -49088,19 +49089,38 @@ var Home = function (_Component) {
                                 "li",
                                 { className: "home__nav-list-item", __source: {
                                         fileName: _jsxFileName,
-                                        lineNumber: 38
+                                        lineNumber: 31
                                     },
                                     __self: this
                                 },
                                 __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
                                     "a",
-                                    { href: "https://github.com/david-babunashvili/React-Redux-Boilerplate/issues", target: "_blank", rel: "noopener noreferrer", className: "home__nav-list-link", __source: {
+                                    { href: "https://github.com/david-babunashvili/Server-Side-React/issues", target: "_blank", rel: "noopener noreferrer", className: "home__nav-list-link", __source: {
                                             fileName: _jsxFileName,
-                                            lineNumber: 39
+                                            lineNumber: 32
                                         },
                                         __self: this
                                     },
                                     "BUGS"
+                                )
+                            ),
+                            __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                                "li",
+                                { className: "home__nav-list-item", __source: {
+                                        fileName: _jsxFileName,
+                                        lineNumber: 34
+                                    },
+                                    __self: this
+                                },
+                                __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                                    __WEBPACK_IMPORTED_MODULE_2_react_router_dom__["a" /* Link */],
+                                    { to: "repos", rel: "noopener noreferrer", className: "home__nav-list-link", __source: {
+                                            fileName: _jsxFileName,
+                                            lineNumber: 35
+                                        },
+                                        __self: this
+                                    },
+                                    "EXAMPLE PAGE"
                                 )
                             )
                         )
@@ -49108,28 +49128,17 @@ var Home = function (_Component) {
                 )
             );
         }
-    }], [{
-        key: "initialAction",
-        value: function initialAction() {
-            return Object(__WEBPACK_IMPORTED_MODULE_3__repos_actions_reposActions__["a" /* reposListFetch */])();
-        }
     }]);
 
     return Home;
 }(__WEBPACK_IMPORTED_MODULE_0_react__["Component"]);
 
 var mapDispatchToProps = function mapDispatchToProps(dispatch) {
-    return {
-        reposListFetch: function reposListFetch(payload) {
-            return dispatch(Object(__WEBPACK_IMPORTED_MODULE_3__repos_actions_reposActions__["a" /* reposListFetch */])());
-        }
-    };
+    return {};
 };
 
 var mapStateToProps = function mapStateToProps(state) {
-    return {
-        repos: state.repos.get('repos')
-    };
+    return {};
 };
 
 /* harmony default export */ __webpack_exports__["a"] = (Object(__WEBPACK_IMPORTED_MODULE_1_react_redux__["b" /* connect */])(mapStateToProps, mapDispatchToProps)(Home));
@@ -49170,7 +49179,7 @@ function reposListFailure(payload) {
 var reposListFetch = function reposListFetch() {
     return function (dispatch, getState) {
         dispatch(reposListRequest());
-        return fetch("https://api.github.com/search/repositories?q=react&sort=watchers").then(function (response) {
+        return fetch("https://api.github.com/search/repositories?q=react&sort=watchers&per_page=10").then(function (response) {
             return response.json();
         }).then(function (repos) {
             return dispatch(reposListSuccess(repos));
@@ -52744,7 +52753,7 @@ var reposReducer = function reposReducer() {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__routes__ = __webpack_require__(159);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__App_css__ = __webpack_require__(398);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__App_css___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_3__App_css__);
-var _jsxFileName = "C:\\Users\\d.babunashvili\\Desktop\\Server-Side-React\\src\\shared\\modules\\common\\scenes\\App.js";
+var _jsxFileName = "/Users/mac/Desktop/Server-Side-React/src/shared/modules/common/scenes/App.js";
 
 var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
 
@@ -52783,7 +52792,7 @@ var App = function (_Component) {
           __self: this
         },
         __WEBPACK_IMPORTED_MODULE_2__routes__["a" /* default */].map(function (route, i) {
-          return __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_1_react_router_dom__["a" /* Route */], Object.assign({ key: i }, route, {
+          return __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_1_react_router_dom__["b" /* Route */], Object.assign({ key: i }, route, {
             __source: {
               fileName: _jsxFileName,
               lineNumber: 10
@@ -55265,6 +55274,144 @@ module.exports = require("module");
 /***/ (function(module, exports) {
 
 module.exports = "/assets/images/react.svg";
+
+/***/ }),
+/* 410 */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react__ = __webpack_require__(5);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_react__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_react_redux__ = __webpack_require__(141);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_immutable__ = __webpack_require__(52);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_immutable___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2_immutable__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_react_router_dom__ = __webpack_require__(151);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__repos_actions_reposActions__ = __webpack_require__(360);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__resources_assets_images_react_svg__ = __webpack_require__(409);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__resources_assets_images_react_svg___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_5__resources_assets_images_react_svg__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__Repos_css__ = __webpack_require__(411);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__Repos_css___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_6__Repos_css__);
+var _jsxFileName = "/Users/mac/Desktop/Server-Side-React/src/shared/modules/repos/scenes/Repos.js";
+
+var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+
+
+
+
+
+
+
+
+var Repos = function (_Component) {
+    _inherits(Repos, _Component);
+
+    function Repos() {
+        _classCallCheck(this, Repos);
+
+        return _possibleConstructorReturn(this, (Repos.__proto__ || Object.getPrototypeOf(Repos)).apply(this, arguments));
+    }
+
+    _createClass(Repos, [{
+        key: "componentDidMount",
+        value: function componentDidMount() {
+            if (!this.props.repos) {
+                this.props.reposListFetch();
+            }
+        }
+    }, {
+        key: "render",
+        value: function render() {
+            var _this2 = this;
+
+            return __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                "div",
+                { className: "repos", __source: {
+                        fileName: _jsxFileName,
+                        lineNumber: 27
+                    },
+                    __self: this
+                },
+                __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                    "h2",
+                    { className: "repos__heading", __source: {
+                            fileName: _jsxFileName,
+                            lineNumber: 28
+                        },
+                        __self: this
+                    },
+                    "React Repos on Github"
+                ),
+                __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                    "ul",
+                    { className: "repos__list", __source: {
+                            fileName: _jsxFileName,
+                            lineNumber: 29
+                        },
+                        __self: this
+                    },
+                    this.props.repos.map(function (repo) {
+                        return __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                            "li",
+                            { className: "repos__list-item", key: repo.get('id'), __source: {
+                                    fileName: _jsxFileName,
+                                    lineNumber: 30
+                                },
+                                __self: _this2
+                            },
+                            repo.get('full_name')
+                        );
+                    })
+                ),
+                __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                    __WEBPACK_IMPORTED_MODULE_3_react_router_dom__["a" /* Link */],
+                    { className: "repos__back", to: "/", __source: {
+                            fileName: _jsxFileName,
+                            lineNumber: 32
+                        },
+                        __self: this
+                    },
+                    "\u2190 Back to home"
+                )
+            );
+        }
+    }], [{
+        key: "initialAction",
+        value: function initialAction() {
+            return Object(__WEBPACK_IMPORTED_MODULE_4__repos_actions_reposActions__["a" /* reposListFetch */])();
+        }
+    }]);
+
+    return Repos;
+}(__WEBPACK_IMPORTED_MODULE_0_react__["Component"]);
+
+var mapDispatchToProps = function mapDispatchToProps(dispatch) {
+    return {
+        reposListFetch: function reposListFetch(payload) {
+            return dispatch(Object(__WEBPACK_IMPORTED_MODULE_4__repos_actions_reposActions__["a" /* reposListFetch */])());
+        }
+    };
+};
+
+var mapStateToProps = function mapStateToProps(state) {
+    return {
+        repos: state.repos.get('repos')
+    };
+};
+
+/* harmony default export */ __webpack_exports__["a"] = (Object(__WEBPACK_IMPORTED_MODULE_1_react_redux__["b" /* connect */])(mapStateToProps, mapDispatchToProps)(Repos));
+
+/***/ }),
+/* 411 */
+/***/ (function(module, exports) {
+
+
 
 /***/ })
 /******/ ]);
