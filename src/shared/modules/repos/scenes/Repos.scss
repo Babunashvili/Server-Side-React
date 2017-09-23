@@ -1,0 +1,22 @@
+.repos {
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    &__heading{
+      font-size: 20px;
+      margin-bottom: 15px;
+    }
+    &__list{
+      text-align: center;
+    }
+    &__list-item{ 
+      margin-top:5px;
+    }
+    &__back{
+      margin-top:15px;
+    }
+}
+ 

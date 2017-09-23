@@ -8,7 +8,7 @@ import {
 } from 'immutable'
 import { reposListFetch } from "../../repos/actions/reposActions";
 import reactJsLogo from '../../../resources/assets/images/react.svg'
-import "./Home.css";
+import "./Home.scss"
 
 class Home extends Component {
 
@@ -19,7 +19,7 @@ class Home extends Component {
                     <a href="#" className="home__logo-link">
                         <img className="home__logo-img" src={reactJsLogo} alt="React Logo" />
                     </a>
-                    <h4 className="home__heading">React-Redux Server Side</h4>
+                    <h4 className="home__heading">Server Side React</h4>
                     <nav className="home__nav">
                         <ul className="home__nav-list">
                             <li className="home__nav-list-item">

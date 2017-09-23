@@ -8,7 +8,7 @@ import {
 } from 'react-router-dom'
 import { reposListFetch } from "../../repos/actions/reposActions";
 import reactJsLogo from '../../../resources/assets/images/react.svg'
-import "./Repos.css";
+import "./Repos.scss";
 
 class Repos extends Component {
 

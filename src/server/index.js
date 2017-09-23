@@ -37,26 +37,23 @@ app.get("*", (req, res, next) => {
       );
 
       const initialData = store.getState();
-      res.send(`
-        <!DOCTYPE html>
-        <html>
-          <head>
-            <title>Server Side React</title>
-            <link rel="shortcut icon" type="image/ico" href="/favicon.ico"/>            
-            <link rel="stylesheet" type="text/css" href="/assets/css/main.css">
-          </head>
-            
-            <body>
-            <div id="root">${markup}</div>
-            <script src="/assets/js/bundle.js" defer></script>
-            <script>window.__initialData__ = ${serialize(initialData)}</script>
-            </body>
-        </html>
-      `);
+      res.send(`<!DOCTYPE html>
+<html>
+  <head>
+    <title>Server Side React</title>
+    <link rel="shortcut icon" type="image/ico" href="/favicon.ico"/>            
+    <link rel="stylesheet" type="text/css" href="/assets/css/main.css">
+  </head>
+  <body>
+    <div id="root">${markup}</div>
+    <script src="/assets/js/bundle.js" defer></script>
+    <script>window.__initialData__ = ${serialize(initialData)}</script>
+  </body>
+</html>`);
     })
     .catch(next);
 });
 
 app.listen(process.env.PORT || 3000, () => {
-  console.log("Server is listening");
+  console.log("Server is listening port:" + (process.env.PORT || 3000));
 });
