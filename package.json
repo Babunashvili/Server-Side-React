@@ -4,7 +4,7 @@
   "description": "",
   "main": "server.js",
   "scripts": {
-    "start": "concurrently --kill-others \"cross-env NODE_ENV=development webpack -w --progress --colors\" \"cross-env nodemon server.js\"",
+    "start": "concurrently --kill-others-on-fail \"cross-env NODE_ENV=development webpack -w --progress --colors\" \"cross-env nodemon server.js\"",
     "build": "cross-env NODE_ENV=production webpack --progress --colors",
     "serv": "node server.js"
   },
@@ -16,6 +16,7 @@
     "express": "^4.15.3",
     "immutable": "^3.8.1",
     "isomorphic-fetch": "^2.2.1",
+    "opn": "^5.1.0",
     "react": "^15.6.1",
     "react-dom": "^15.6.1",
     "react-redux": "^5.0.5",
@@ -38,6 +39,7 @@
     "file-loader": "^0.11.2",
     "node-sass": "^4.5.3",
     "nodemon": "^1.11.0",
+    "on-build-webpack": "^0.1.0",
     "postcss-loader": "^2.0.6",
     "sass-loader": "^6.0.6",
     "webpack": "^3.6.0"
